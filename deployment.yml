@@ -47,4 +47,5 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 4499
-  type: LoadBalancer  # You can use 'ClusterIP' if you do not need external access
+    nodePort: 30007
+  type: NodePort 
