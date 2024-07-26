@@ -6,6 +6,9 @@ RUN apt-get update && \
     apt-get install -y fortune cowsay netcat-openbsd && \
     apt-get clean
 
+# Add /usr/games to PATH
+ENV PATH="/usr/games:${PATH}"
+
 # Set the working directory
 WORKDIR /app
 
