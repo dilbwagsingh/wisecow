@@ -3,7 +3,7 @@ FROM debian:latest
 
 # Install necessary packages
 RUN apt-get update && \
-    apt-get install -y fortune cowsay netcat && \
+    apt-get install -y fortune cowsay netcat-openbsd && \
     apt-get clean
 
 # Set the working directory
