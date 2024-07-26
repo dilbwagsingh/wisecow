@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: wisecow-container
-        image: <your-docker-image>:latest  # Replace with your Docker image name and tag
+        image: wisecow:latest  # Replace with your Docker image name and tag
         ports:
         - containerPort: 4499
         env:
